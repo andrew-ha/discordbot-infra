@@ -11,6 +11,6 @@ phases:
       - pip install -r requirements.txt
   build:
     commands:
-      - cdk synth
+      - cdk deploy
 artifacts:
   files: '**/*'
