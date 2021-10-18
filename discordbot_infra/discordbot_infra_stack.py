@@ -8,6 +8,6 @@ class DiscordbotInfraStack(cdk.Stack):
     super().__init__(scope, construct_id, **kwargs)
 
     # The code that defines your stack goes here
-    # Create an ECS cluster
+    # Create ECS cluster
     cluster = ecs.Cluster(self, "Cluster")
 
