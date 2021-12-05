@@ -3,8 +3,8 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.8
-      nodejs: 14
+      python: latest
+      nodejs: latest
     commands:
       # - ls -al
       - npm install -g aws-cdk
