@@ -4,9 +4,9 @@ phases:
   install:
     runtime-versions:
       python: 3.8
-      nodejs: 12
+      nodejs: 16
     commands:
-      - ls -al
+      # - ls -al
       - npm install -g aws-cdk
       - pip install -r requirements.txt
   build:
