@@ -1,12 +1,13 @@
 # from aws_cdk import core as cdk
 from constructs import Construct
-from aws_cdk import App, Stack                    # core constructs
-from aws_cdk import aws_ecs as ecs
-from aws_cdk import aws_ec2 as ec2
-from aws_cdk import aws_secretsmanager as secretsmanager
-# from aws_cdk import aws_
+from aws_cdk import (
+  Stack,
+  aws_ecs as ecs,
+  aws_ec2 as ec2,
+  aws_secretsmanager as secretsmanager,
+)
 
-class DiscordbotInfraStack(Construct):
+class DiscordbotInfraStack(Stack):
 
   def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
     super().__init__(scope, construct_id, **kwargs)

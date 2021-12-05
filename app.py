@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 import os
 
-# from aws_cdk import core as cdk
-from constructs import Construct
-from aws_cdk import App, Stack                    # core constructs
+import aws_cdk as cdk
+# from constructs import Construct
+# from aws_cdk import App, Stack                    # core constructs
 
 # For consistency with TypeScript code, `cdk` is the preferred import name for
 # the CDK's core module.  The following line also imports it as `core` for use
@@ -15,7 +15,7 @@ from discordbot_infra.discordbot_infra_stack import DiscordbotInfraStack
 
 
 # app = core.App()
-app = App()
+app = cdk.App()
 DiscordbotInfraStack(app, "DiscordbotInfraStack",
     # If you don't specify 'env', this stack will be environment-agnostic.
     # Account/Region-dependent features and context lookups will not work,
