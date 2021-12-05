@@ -13,7 +13,6 @@ import aws_cdk as cdk
 
 from discordbot_infra.discordbot_infra_stack import DiscordbotInfraStack
 
-
 # app = core.App()
 app = cdk.App()
 DiscordbotInfraStack(app, "DiscordbotInfraStack",

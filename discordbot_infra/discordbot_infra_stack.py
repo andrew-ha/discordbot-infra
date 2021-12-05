@@ -21,7 +21,8 @@ class DiscordbotInfraStack(Stack):
 
     # VPC to deploy ECS related infra
     vpc = ec2.Vpc(self, "VPC",
-        cidr="10.0.0.0/16"
+        cidr="10.0.0.0/16",
+        nat_gateways=0
     )
 
     # Iterate the private subnets
